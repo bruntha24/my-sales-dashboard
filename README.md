@@ -1,40 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+my-sales-dashboard/
+├── components/
+│ ├── atoms/
+│ │ ├── Title.tsx
+│ │ └── Card.tsx
+│ ├── molecules/
+│ │ └── SalesItem.tsx
+│ └── organisms/
+├── data/
+│ └── salesByYear.json
+├── pages/
+│ ├── _app.tsx
+│ ├── _document.tsx
+│ └── index.tsx
+├── public/
+├── styles/
+│ └── globals.css
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
 
-## Getting Started
+yaml
+Copy
+Edit
 
-First, run the development server:
+---
+
+## 🚀 How to Run This Project
+
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/your-username/my-sales-dashboard.git
+cd my-sales-dashboard
+Replace your-username with your actual GitHub username.
+
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+or if you're using Yarn:
+
+bash
+Copy
+Edit
+yarn
+3. Run the development server
+bash
+Copy
+Edit
 npm run dev
-# or
+or:
+
+bash
+Copy
+Edit
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The app will start at http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Build for production
+bash
+Copy
+Edit
+npm run build
+🎨 Tech Stack
+Next.js
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+TypeScript
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Tailwind CSS
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Recharts
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Atomic Design Methodology
 
-## Learn More
+📌 Data
+All data is mock and stored in:
 
-To learn more about Next.js, take a look at the following resources:
+bash
+Copy
+Edit
+/data/salesByYear.json
+Example:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+json
+Copy
+Edit
+[
+  { "year": 2022, "sales": 13200 },
+  { "year": 2023, "sales": 17850 },
+  { "year": 2024, "sales": 14500 }
+]
+📥 Contributions
+Feel free to fork and improve the project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📄 License
+This project is open-source and available under the MIT License.
 
-## Deploy on Vercel
+yaml
+Copy
+Edit
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+
+
+
+
+
+
+
+
